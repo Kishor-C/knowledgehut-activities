@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <table>
+        <tr>
+            <td>Name </td>
+            <td><input type="text" name="name" autocomplete="off"></td>
+        </tr>
+        <tr>
+            <td>Gender </td>
+            <td><input type="radio" name="g" value="Male">Male</td>
+            <td><input type="radio" name="g" value="Female">Female</td>
+        </tr>
+        <tr>
+            <td>Dat of Birth</td>
+            <td><input type="date" name="DOB" id=""></td>
+        </tr>
+        <tr>
+            <td>Courses </td>
+            <td><input type="checkbox" name="courses" value="html">HTML</td>
+            <td><input type="checkbox" name="courses" value="css">CSS</td>
+            <td><input type="checkbox" name="courses" value="javascript">Javascript</td>
+        </tr>
+        <tr>
+            <td>Qualification </td>
+            <td><select name="qualification" id="">
+                <optgroup label="Bachelor's Degree">
+                    <option value="Btech"> B.tech</option>
+                    <option value="bcom">Bcom</option>
+                    <option value="bca">BCA</option>
+                    <option value="bsc">BSc</option>
+                </optgroup>
+                <optgroup label="master's degree" >
+                    <option value="Mtech">M.tech</option>
+                    <option value="mcom">Mcom</option>
+                    <option value="mca">MCA</option>
+                    <option value="msc">MSc</option>
+                </optgroup>
+            </select></td>
+        </tr>
+        <tr>
+            <td>Address </td>
+            <td><textarea name="address" id="" cols="30" rows="3"></textarea></td>
+        </tr>
+        <tr>
+            <td>Update Pic</td>
+            <td><input type="file" value="pic"></td>
+        </tr>
+    </table>
+</body>
+
+</html>
