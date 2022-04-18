@@ -1,0 +1,19 @@
+.mheader{
+    background-color: rgb(91, 198, 237);
+    top: 0;
+    left: 10%;
+    right: 10%;
+
+}
+.mcenter{
+    
+    background-color: rgb(146, 146, 242);
+}
+.mfooter{
+    background-color: rgb(8, 127, 246);
+    bottom: 0;
+}
+img{
+    height: 30%;
+    width: 40%;
+} 
