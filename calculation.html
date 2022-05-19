@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculation Activity</h1>
+
+    <form>
+        <div>
+            <label for="n1">First Number  <input  id="n1" placeholder="only number allowed" autocomplete="off"></label>
+            <span id="c1" style="color: red"></span>
+        </div>
+        <br>
+        <br>
+        <div>
+            <label for="n2">Second Number   <input id="n2" placeholder="only number is allowed" autocomplete="off"></label>
+            <span id="c2" style="color: red"></span>
+        </div>
+        <br>
+        <br>
+        <div id="calculator">
+            <button class="addition">Addition (+)</button>
+            <button class="subtract">Subtract (-)</button>
+            <button class="multiply">Multiply (x) </button>
+            <button class="divide"> Divide(÷) </button>
+          </div>
+          <br>
+          <br>
+          <div>
+            <label for="output">Result   <input id="output" placeholder="result" disabled></label>
+           
+        </div>
+    </form>
+    <script>
+        const firstNumber = document.querySelector("#n1");
+        const secondNumber = document.querySelector("#n2");
+        const output = document.querySelector("#output");
+        const btn1 = document.querySelector(".addition");
+        const btn2 = document.querySelector(".subtract");
+        const btn3 = document.querySelector(".multiply");
+        const btn4 = document.querySelector(".divide");
+        let c1 = document.querySelector("#c1");
+        let c2 = document.querySelector("#c2");
+        
+
+    
+
+
+        function sum(a, b) {
+           
+            return Number.parseInt(a, 10) + Number.parseInt(b, 10);
+        }
+
+         function subtract(a, b) {
+       
+        return a - b;
+        }
+
+        function multiply(a, b) {
+       
+        return a * b;
+        }
+
+        function divide(a, b) {
+            
+        return a / b;
+        }
+
+        // let regex = /^[0-9]$/;
+
+       
+       
+        btn1.addEventListener("click", () => {
+            event.preventDefault();
+            if(firstNumber.value !== Number) {
+             c1.textContent = "Only number is allowed";
+         } else {
+            c1.textContent = "";
+             
+         }
+            if(secondNumber.value !== Number) {
+            c2.textContent = "Only number is allowed";
+        } else {
+            c2.textContent= "";
+             
+         }
+            output.value = sum(firstNumber.value, secondNumber.value);
+            firstNumber.value = "";
+            secondNumber.value = "";
+            
+            
+        })
+        btn2.addEventListener("click", () => {
+            event.preventDefault();
+            if(firstNumber.value !== Number) {
+             c1.textContent = "Only number is allowed";
+         } else {
+            c1.textContent = "";
+             
+         }
+            if(secondNumber.value !== Number) {
+            c2.textContent = "Only number is allowed";
+        } else {
+            c2.textContent= "";
+             
+         }
+            output.value = subtract(firstNumber.value, secondNumber.value);
+            firstNumber.value = "";
+            secondNumber.value = "";
+            
+        });
+        
+       
+        btn3.addEventListener("click", () => {
+            event.preventDefault();
+            if(firstNumber.value !== Number) {
+             c1.textContent = "Only number is allowed";
+         } else {
+            c1.textContent = "";
+             
+         }
+            if(secondNumber.value !== Number) {
+            c2.textContent = "Only number is allowed";
+        } else {
+            c2.textContent= "";
+             
+         }
+            output.value = multiply(firstNumber.value, secondNumber.value);
+            firstNumber.value = "";
+            secondNumber.value = "";
+            
+           
+        });
+        btn4.addEventListener("click", () => {
+            event.preventDefault();
+            if(firstNumber.value !== Number) {
+             c1.textContent = "Only number is allowed";
+         } else {
+            c1.textContent = "";
+             
+         }
+            if(secondNumber.value !== Number) {
+            c2.textContent = "Only number is allowed";
+        } else {
+            c2.textContent= "";
+             
+         }
+            output.value = divide(firstNumber.value, secondNumber.value);
+            firstNumber.value = "";
+            secondNumber.value = "";
+            
+        });
+        
+    </script>
+
+</body>
+</html>
